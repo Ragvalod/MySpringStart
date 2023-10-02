@@ -7,19 +7,9 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="testBean"
-          class="com.confucy_mazuta.myspringstart.TestBean">
-        <constructor-arg value="Передаем в конструктор"/>
+    <bean id="musicBean"
+          class="com.confucy_mazuta.myspringstart.MettalMusic">
     </bean>
 
-    <bean id="testBean1"
-          class="com.confucy_mazuta.myspringstart.TestBean">
-        <constructor-arg value="Нехуя не передаем"/>
-    </bean>
-
-    <bean id="testBean2"
-          class="com.confucy_mazuta.myspringstart.TestBean">
-        <constructor-arg value="Анет! Передаем"/>
-    </bean>
 
 </beans>
