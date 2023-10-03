@@ -11,6 +11,7 @@
           class="com.confucy_mazuta.myspringstart.ClassicalMusic">
     </bean>
 
+
     <bean id="musicPlayer"
         class="com.confucy_mazuta.myspringstart.MusicPlayer">
         <constructor-arg ref="musicBean"/>
