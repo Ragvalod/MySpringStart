@@ -8,14 +8,18 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="musicBean"
-          class="com.confucy_mazuta.myspringstart.ClassicalMusic">
+          class="com.confucy_mazuta.myspringstart.MettalMusic">
     </bean>
 
 
     <bean id="musicPlayer"
         class="com.confucy_mazuta.myspringstart.MusicPlayer">
-        <constructor-arg ref="musicBean"/>
+        <property name="music" ref="musicBean"/>
+        <property name="name" value="Vinamp"/>
+        <property name="volume" value="2"/>
     </bean>
+
+
 
 
 </beans>
