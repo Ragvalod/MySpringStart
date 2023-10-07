@@ -15,11 +15,12 @@
 
 
     <bean id="musicPlayer"
-        class="com.confucy_mazuta.myspringstart.MusicPlayer">
+        class="com.confucy_mazuta.myspringstart.MusicPlayer"
+        scope="prototype">
         <property name="music" ref="musicBean"/>
-
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
+
     </bean>
 
 
