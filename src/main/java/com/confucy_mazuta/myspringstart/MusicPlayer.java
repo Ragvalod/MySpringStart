@@ -14,6 +14,13 @@ public class MusicPlayer {
         this.music = music;
     }
 
+    private void Init(){
+        System.out.println("Init");
+    }
+
+    private void Destroy() {
+        System.out.println("Destroy");
+    }
     public void PlayMusic() {
         System.out.println("Сейчас " + music.getSong());
     }
