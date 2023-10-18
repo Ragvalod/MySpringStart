@@ -2,7 +2,7 @@ package com.confucy_mazuta.myspringstart;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class MettalMusic implements Music {
     //Ограничим создание только одного обьекта данного класса с помощью приватного конструктора
     private MettalMusic() {

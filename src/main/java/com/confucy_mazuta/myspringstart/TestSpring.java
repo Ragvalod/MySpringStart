@@ -8,18 +8,35 @@ public class TestSpring {
                 "applicationContext.xml"
         );
 
-        Music music = context.getBean("mettalMusic", Music.class);
-        Music music2 = context.getBean("rockMusic", Music.class);
-        MusicPlayer musicPlayer = new MusicPlayer(music);
-        MusicPlayer musicPlayer2 = new MusicPlayer(music2);
-        musicPlayer.PlayMusic();
-        musicPlayer2.PlayMusic();
-        musicPlayer.setVolume(199);
-        System.out.println(musicPlayer.getVolume());
+        Computer computer = context.getBean("computer", Computer.class);
+        System.out.println(computer);
         context.close();
 
 
 
+
+        //Урок 10 первая часть
+//        RockMusic rockMusic = new RockMusic();
+//
+//        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
+//        musicPlayer.PlayMusic();
+////        musicPlayer.setMusic(rockMusic);
+////        musicPlayer.PlayMusic();
+//        context.close();
+
+        //Урок 9
+//        Music music = context.getBean("mettalMusic", Music.class);
+//        Music music2 = context.getBean("rockMusic", Music.class);
+//        MusicPlayer musicPlayer = new MusicPlayer(music);
+//        MusicPlayer musicPlayer2 = new MusicPlayer(music2);
+//        musicPlayer.PlayMusic();
+//        musicPlayer2.PlayMusic();
+//        musicPlayer.setVolume(199);
+//        System.out.println(musicPlayer.getVolume());
+//        context.close();
+
+
+        //Урок 8
 //        MettalMusic mettalMusic = context.getBean("musicBean", MettalMusic.class);
 //        MettalMusic mettalMusic1 = context.getBean("musicBean", MettalMusic.class);
 //        MettalMusic mettalMusic2 = context.getBean("musicBean", MettalMusic.class);

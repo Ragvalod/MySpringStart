@@ -1,7 +1,21 @@
 package com.confucy_mazuta.myspringstart;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class MusicPlayer {
+//    @Autowired
     private Music music;
+
+    private ClassicalMusic classicalMusic;
+    private RockMusic rockMusic;
+
+    @Autowired
+    public MusicPlayer(ClassicalMusic classicalMusic, RockMusic rockMusic) {
+        this.classicalMusic = classicalMusic;
+        this.rockMusic = rockMusic;
+    }
 
     private String name;
 
@@ -10,6 +24,8 @@ public class MusicPlayer {
     public MusicPlayer() {
     }
 
+    //Конструктор
+//    @Autowired
     public MusicPlayer(Music music) {
         this.music = music;
     }
@@ -21,10 +37,13 @@ public class MusicPlayer {
     private void Destroy() {
         System.out.println("Destroy");
     }
-    public void PlayMusic() {
-        System.out.println("Сейчас " + music.getSong());
+    public String PlayMusic() {
+        return "Сейчас -  " + classicalMusic.getSong();
+//        System.out.println("Сейчас -  " + classicalMusic.getSong());
+//        System.out.println("Сейчас -  " + rockMusic.getSong());
     }
 
+//    @Autowired
     public void setMusic(Music music) {
         this.music = music;
     }
